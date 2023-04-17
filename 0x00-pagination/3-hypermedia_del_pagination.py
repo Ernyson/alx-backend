@@ -63,14 +63,6 @@ class Server:
                 next_index = key
                 break
 
-        # diff = len(self.dataset()) - len(self.indexed_dataset())
-        # end_index = index + page_size + diff
-        # for i in range(index, end_index):
-        #     try:
-        #         data.append(dataset[i])
-        #     except KeyError:
-        #         i += 1
-
         res = {
             "index": index if index else 0,
             "data": data,
