@@ -15,7 +15,7 @@ class LFUCache(BaseCaching):
     """
     def __init__(self):
         """
-        Initializes
+        Initialize
         """
         super().__init__()
         self.freq = OrderedDict()
@@ -43,7 +43,7 @@ class LFUCache(BaseCaching):
 
     def get(self, key):
         """
-        Now fetching data with key
+        retrieve item with key
         """
         if not key or key not in self.cache_data:
             return None
