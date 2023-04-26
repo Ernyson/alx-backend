@@ -5,6 +5,8 @@ from flask_babel import Babel
 from flask import Flask, render_template, request
 
 
+app = Flask(__name__)
+babel = Babel(app)
 class Config:
     """class used for configuring languages
     """
